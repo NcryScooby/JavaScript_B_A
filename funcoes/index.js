@@ -33,10 +33,10 @@ function saudacao2(nome){
     return `Bom dia ${nome}!`;
 }
 
-// Recebe a função em uma constante e muda o nome por parametro
+// Recebe a função em uma constante e muda o nome por argumento
 const variavel2 = saudacao2('João');
 
-// Exibe na tela a função + nome recebido por parametro
+// Exibe na tela a função + nome recebido por argumento
 console.log(variavel2);
 
 // Cria função que soma dois valores
@@ -47,7 +47,7 @@ function soma(x, y){
     return resultado;
 }
 
-// Declara uma constante que recebe a função somando 5 + 5 por parametro
+// Declara uma constante que recebe a função somando 5 + 5 por argumento
 const resultado = soma(5, 5);
 
 // Exibe a constante resultado com os valores da função
@@ -72,7 +72,7 @@ function soma2(x = 5, y = 1){
     return resultado;
 }
 
-// Armazena apenas a função sem parametros dentro da constante
+// Armazena apenas a função sem argumentos dentro da constante
 const resultado2 = soma2();
 
 // Exibe na tela a constante
@@ -84,13 +84,13 @@ const raiz = function (n) {
     return n ** 0.5;
 };
 
-//exibe a constante com a função calculando a raiz quadrada, passando 9 como parametro
+//exibe a constante com a função calculando a raiz quadrada, passando 9 como argumento
 console.log(raiz(9));
 
-//exibe a constante com a função calculando a raiz quadrada, passando 16 como parametro
+//exibe a constante com a função calculando a raiz quadrada, passando 16 como argumento
 console.log(raiz(16));
 
-//exibe a constante com a função calculando a raiz quadrada, passando 25 como parametro
+//exibe a constante com a função calculando a raiz quadrada, passando 25 como argumento
 console.log(raiz(25));
 
 //Arrow Function serve para facilitar a vida do programador, digitando menos código
@@ -98,5 +98,5 @@ const raiz2 = n =>
     // returna o calculo
     n ** 0.5;
 
-//exibe a constante com a função calculando a raiz quadrada, passando 25 como parametro
+//exibe a constante com a função calculando a raiz quadrada, passando 25 como argumento
 console.log(raiz2(25));
