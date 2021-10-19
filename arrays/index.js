@@ -82,7 +82,7 @@ console.log(alunos[50]);
 // Exibe o array do Elemento 0 ao Elemento 3
 console.log(alunos.slice(0, 3));
 
-// Exibe o array do Elemento 0 ao Elemento -3
+// Exibe o array do Elemento 0 ao Elemento -4
 console.log(alunos.slice(0, -4));
 
 // Verifica se é um array com true ou false
