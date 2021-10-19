@@ -46,7 +46,7 @@ alunos.unshift('Arnaldo'); // Vai ficar no indice 0 pois executamos unshift depo
 // Exibir array inteiro
 console.log(alunos);
 
-// Remove nomes do fim do array
+// Remove nome do fim do array
 alunos.pop();
 
 // Exibir array inteiro
