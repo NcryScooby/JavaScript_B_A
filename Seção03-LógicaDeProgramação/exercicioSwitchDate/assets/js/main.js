@@ -77,4 +77,8 @@ function getMesAnoTexto(mesDoAno) {
   return mesAnoTexto;
 }
 
-h1.innerHTML = `${getDiaSemanaTexto(data.getDay())}, ${data.getDate()} de ${getMesAnoTexto(data.getMonth())} de ${data.getFullYear()} ${data.getHours()}:${data.getMinutes()}`;
+function zeroAEsquerda(numero) {
+  return numero >= 10 ? numero : `0${numero}`;
+}
+
+h1.innerHTML = `${getDiaSemanaTexto(data.getDay())}, ${data.getDate()} de ${getMesAnoTexto(data.getMonth())} de ${data.getFullYear()} ${zeroAEsquerda(data.getHours())}:${zeroAEsquerda(data.getMinutes())}`;
