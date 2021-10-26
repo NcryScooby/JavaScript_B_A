@@ -1,7 +1,9 @@
 const h1 = document.querySelector("#data");
 const data = new Date();
+
 function getDiaSemanaTexto(diaSemana) {
   let diaSemanaTexto;
+
   switch (diaSemana) {
     case 0:
       diaSemanaTexto = "Domingo";
@@ -30,9 +32,10 @@ function getDiaSemanaTexto(diaSemana) {
   }
   return diaSemanaTexto;
 }
-const mesDoAno = new Date();
+
 function getMesAnoTexto(mesDoAno) {
   let mesAnoTexto;
+  
   switch (mesDoAno) {
     case 0:
       mesAnoTexto = "Janeiro";
@@ -74,4 +77,4 @@ function getMesAnoTexto(mesDoAno) {
   return mesAnoTexto;
 }
 
-h1.innerHTML = `${getDiaSemanaTexto(data.getDay())}, ${data.getDate()} de ${getMesAnoTexto(mesDoAno.getMonth())} de ${data.getFullYear()} ${data.getHours()}:${data.getMinutes()}`;
+h1.innerHTML = `${getDiaSemanaTexto(data.getDay())}, ${data.getDate()} de ${getMesAnoTexto(data.getMonth())} de ${data.getFullYear()} ${data.getHours()}:${data.getMinutes()}`;
