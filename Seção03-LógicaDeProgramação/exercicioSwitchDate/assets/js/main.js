@@ -1,4 +1,4 @@
-const p = document.querySelector("#data");
+const h1 = document.querySelector("#data");
 const data = new Date();
 function getDiaSemanaTexto(diaSemana) {
   let diaSemanaTexto;
@@ -74,4 +74,4 @@ function getMesAnoTexto(mesDoAno) {
   return mesAnoTexto;
 }
 
-p.innerHTML = `${getDiaSemanaTexto(data.getDay())}, ${data.getDate()} de ${getMesAnoTexto(mesDoAno.getMonth())} de ${data.getFullYear()} ${data.getHours()}:${data.getMinutes()}`;
+h1.innerHTML = `${getDiaSemanaTexto(data.getDay())}, ${data.getDate()} de ${getMesAnoTexto(mesDoAno.getMonth())} de ${data.getFullYear()} ${data.getHours()}:${data.getMinutes()}`;
