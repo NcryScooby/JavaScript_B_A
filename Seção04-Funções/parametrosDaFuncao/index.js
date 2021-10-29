@@ -78,3 +78,11 @@ const conta = function(operador, acumulador, ...numeros){
 };
 
 conta('+', 1, 20, 30, 40, 50);
+
+/////////
+
+const conta2 = (...args) => {
+    console.log(args);
+};
+
+conta2('+', 1, 22, 33, 44, 55);
