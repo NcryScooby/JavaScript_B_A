@@ -1,11 +1,13 @@
 // Map, mapeando o array
-// Map vai sempre ter o mesmo tamanho do array original
+// Map altera os valores e sempre vai ter o mesmo tamanho do array original
 
 const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 
 // Dobre os números
 const numerosEmDobro = numeros.map(numero => numero * 2);
 console.log(numerosEmDobro);
+
+console.log('--------------------------');
 
 // Para cada elemento:
 // Retorne apenas o nome da pessoa
@@ -21,18 +23,21 @@ const pessoas = [
     { nome: "Maria", idade: 45 },
 ];
 
-const stringNome = pessoas.map(pessoa => pessoa.nome);
-console.log(stringNome);
+// Exibe apenas o nome das pessoas
+const nomes = pessoas.map(obj => obj.nome);
+console.log(nomes);
+console.log('--------------------------');
 
-const semNome = pessoas.map(pessoa => {
-    const { nome, ...resto } = pessoa;
-    return resto;
-});
-console.log(semNome);
+// Remova apenas a chave "nome" do objeto
+const idades = pessoas.map(obj => ({ idade: obj.idade }));
+console.log(idades);
+console.log('--------------------------');
 
-const comId = pessoas.map(pessoa => {
-    const { nome, ...resto } = pessoa;
-    return { id: Math.random(), ...resto };
+// Exibe o id das pessoas
+const comId = pessoas.map(function(obj, indice){
+    const newObj = { ...obj };
+    newObj.id = indice;
+    return newObj;
 });
 
 console.log(comId);
