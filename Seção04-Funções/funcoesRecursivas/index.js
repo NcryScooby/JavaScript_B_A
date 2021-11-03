@@ -1,4 +1,4 @@
-// Funções recursivas
+// Funções recursivas -> uma função que se chama de volta
 
 function recursiva(max){
     if(max >= 10) return;
