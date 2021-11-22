@@ -73,11 +73,18 @@
 function Pessoa(nome, sobrenome){
     this.nome = nome;
     this.sobrenome = sobrenome;
+
+    Object.freeze(this); // Não permite alterar nenhum valor do objeto
 }
 
 // new = {} <- this -> this
 
 const p1 = new Pessoa('Fabrício', 'Caldana');
+// Object.freeze(p1); Congela o objeto, não permite alteração
+// p1 = 'Outra Coisa'; Não é possível alterar desse jeito 
+// p1.nome = 'Outro Nome'; Alterar apenas o valor do objeto
+delete p1.nome; // Não funciona pois o objeto está congelado
 const p2 = new Pessoa('João', 'Silva');
 
 console.log(p1);
+console.log(p2);
